@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('body');
+            
+            /*The timestamps() method automatically adds created_at and updated_at columns to the table*/
             $table->timestamps();
         });
     }
