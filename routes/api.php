@@ -23,4 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/articles', [ArticleController::class, 'index']);
 
 // show is a mothed that will be in the controller file and it will retrieves and returns details of a single article based on its ID in a JSON format.
-Route::get('/article/{id}', [ArticleController::class, 'show']);
+Route::get('/articles/{id}', [ArticleController::class, 'show']);

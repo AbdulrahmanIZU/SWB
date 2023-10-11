@@ -21,6 +21,6 @@ class ArticleController extends Controller
             return response()->json(['error' => 'Article not found'], 404);
         }
 
-        return response()->json($article);
+        return response()->json($article[$id-1]);
     }
 }
